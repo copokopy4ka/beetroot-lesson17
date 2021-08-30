@@ -1,0 +1,62 @@
+.intro {
+    padding: 115px 17px 0;
+    background-color: $black;
+    min-height: 100vh;
+
+    @include respond-to('tablet') {
+        padding: 295px 75px 0;
+    }
+
+    @include respond-to('laptop') {
+        padding: 240px 0 0;
+    }
+
+    &__title-holder {
+        color: $white;
+        padding: 0 0 55px;
+        text-align: center;
+
+        @include respond-to('tablet') {
+            padding: 0 0 45px;
+        }
+    }
+
+    &__title {
+        font-family: 'source_sans_proregular';
+        font-size: 36px;
+        margin: 0 0 27px;
+
+        @include respond-to('tablet') {
+            font-size: 72px;
+            padding: 0 0 22px;
+        }
+    
+        @include respond-to('laptop') {
+            font-size: 84px;
+            padding: 0 0 28px;
+        }
+    }
+
+    &__text {
+        display: block;
+        max-width: 70%;
+        margin: 0 auto;
+        font-size: 12px;
+        line-height: 18px;
+
+        @include respond-to('tablet') {
+            font-size: 22px;
+            line-height: 33px;
+            max-width: 573px;
+        }
+    
+        @include respond-to('laptop') {
+            line-height: 34px;
+        }
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+}
